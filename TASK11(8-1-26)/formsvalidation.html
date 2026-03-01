@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 11 - Form Validation</title>
+</head>
+<body>
+
+<form>
+<fieldset>
+  <legend>Personal Details</legend>
+
+  <label>Name:</label>
+  <input type="text" required><br><br>
+
+  <label>Email:</label>
+  <input type="email" required><br><br>
+
+  <label>Password:</label>
+  <input type="password" minlength="6" required><br><br>
+
+  <label>Age:</label>
+  <input type="number" min="18" max="60" required><br><br>
+
+  <label>Phone:</label>
+  <input type="text" pattern="[0-9]{10}" required><br><br>
+
+  <input type="submit">
+  <input type="reset">
+</fieldset>
+</form>
+
+</body>
+</html>
