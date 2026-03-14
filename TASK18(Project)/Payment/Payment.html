@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment | Green Revolution</title>
+  <link rel="stylesheet" href="interactions.css">
+  <link rel="stylesheet" href="Payment.css">
+</head>
+<body>
+  <main class="payment-page">
+    <section class="payment-card">
+      <h1>Secure Payment</h1>
+      <p class="subtitle">Complete your order details and confirm payment.</p>
+
+      <div class="summary-box">
+        <h2>Order Summary</h2>
+        <div id="payment-items"></div>
+        <div class="summary-total" id="payment-total">Total: Rs 0</div>
+      </div>
+
+      <form id="payment-form" class="payment-form">
+        <label for="full-name">Full Name</label>
+        <input id="full-name" name="fullName" type="text" required>
+
+        <label for="phone">Phone Number</label>
+        <input id="phone" name="phone" type="tel" required>
+
+        <label for="address">Delivery Address</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <label for="method">Payment Method</label>
+        <select id="method" name="method" required>
+          <option value="cod">Cash on Delivery</option>
+          <option value="upi">UPI</option>
+          <option value="card">Card</option>
+        </select>
+
+        <div class="actions">
+          <a class="secondary-btn" href="Product.html">Back to Products</a>
+          <button type="submit" class="primary-btn">Place Order</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="interactions.js"></script>
+  <script src="payment.js"></script>
+</body>
+</html>
